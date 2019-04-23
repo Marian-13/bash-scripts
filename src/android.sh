@@ -53,6 +53,8 @@ yes | sdkmanager "platform-tools"
 yes | sdkmanager $ANDROID_SYSTEM_IMAGE_VERSION
 yes | sdkmanager --licenses
 
+sudo chown -R `whoami`:`whoami` ~/.android
+
 yes '' | avdmanager create avd -n $ANDROID_AVD_NAME -k $ANDROID_SYSTEM_IMAGE_VERSION
 
 sudo apt-get update
