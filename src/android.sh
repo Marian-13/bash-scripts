@@ -20,7 +20,7 @@
 # https://linoxide.com/linux-how-to/install-android-sdk-manager-ubuntu/
 # https://developer.android.com/studio/#downloads
 
-test `which java` || (echo '"android" failed' >> log.txt && return)
+test `which java` || { echo '"android" failed' >> log.txt && return; }
 
 ANDROID_SDK_TOOLS_VERSION=$1    # '4333796'
 ANDROID_PLATFORM_VERSION=$2     # 'platforms;android-28'
