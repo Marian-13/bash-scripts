@@ -4,7 +4,7 @@ sudo echo 'Start!'
 
 source ./src/vim.sh
 source ./src/curl.sh
-source ./src/nvm.sh '10.15.3'
+source ./src/nvm.sh '0.34.0' '10.15.3'
 source ./src/jabba.sh 'zulu@1.8.212' # '1.8'
 source ./src/gradle.sh
 source ./src/cordova.sh '9.0.0'
