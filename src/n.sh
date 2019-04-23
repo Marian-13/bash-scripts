@@ -18,5 +18,5 @@ sudo apt install -y git curl gcc build-essential
 
 curl -L https://git.io/n-install | bash -s -- -y
 
-bash ~/.profile
-bash ~/.bashrc
+source~/.profile
+source ~/.bashrc
