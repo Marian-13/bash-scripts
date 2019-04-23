@@ -4,7 +4,8 @@
 # https://cordova.apache.org/
 # https://cordova.apache.org/#getstarted
 
-[ !`which node` ] && echo '"cordova" failed' >> log.txt && return
+
+test `which node` || (echo '"cordova" failed' >> log.txt && return)
 
 CORDOVA_VERSION=$1 # '9.0.0'
 
