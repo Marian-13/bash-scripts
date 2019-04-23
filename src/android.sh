@@ -37,13 +37,13 @@ cat ~/.profile | grep "ANDROID_HOME="     || echo "export ANDROID_HOME=~/android
 cat ~/.profile | grep "ANDROID_SDK_ROOT=" || echo "export ANDROID_SDK_ROOT=~/android" >> ~/.profile
 cat ~/.profile | grep "ANDROID_SDK_HOME=" || echo "export ANDROID_SDK_HOME=~" >> ~/.profile
 
-source ~/.profile
+bash ~/.profile
 
 echo $PATH | grep "${ANDROID_HOME}/tools[:|$]"          || echo 'export PATH="${PATH}:${ANDROID_HOME}/tools"' >> ~/.profile
 echo $PATH | grep "${ANDROID_HOME}/tools/bin[:|$]"      || echo 'export PATH="${PATH}:${ANDROID_HOME}/tools/bin"' >> ~/.profile
 echo $PATH | grep "${ANDROID_HOME}/platform-tools[:|$]" || echo 'export PATH="${PATH}:${ANDROID_HOME}/platform-tools"' >> ~/.profile
 
-source ~/.profile
+bash ~/.profile
 
 touch ~/.android/repositories.cfg
 

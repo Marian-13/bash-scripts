@@ -17,6 +17,6 @@
 sudo apt-get -y install zip unzip
 
 curl -s https://get.sdkman.io | bash
-source ~/.sdkman/bin/sdkman-init.sh
+bash ~/.sdkman/bin/sdkman-init.sh
 
 sdk install gradle
