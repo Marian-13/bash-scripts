@@ -9,4 +9,4 @@ test `which node` || { echo '"cordova" failed' >> log.txt && return; }
 
 CORDOVA_VERSION=$1 # '9.0.0'
 
-sudo npm install -g cordova@$CORDOVA_VERSION
+sudo -E env "PATH=$PATH" npm install -g cordova@$CORDOVA_VERSION
