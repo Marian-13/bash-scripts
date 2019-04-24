@@ -47,6 +47,8 @@ source ~/.profile
 
 touch ~/.android/repositories.cfg
 
+sudo chown -R `whoami`:`whoami` ~/android
+
 yes | sdkmanager $ANDROID_PLATFORM_VERSION
 yes | sdkmanager $ANDROID_BUILD_TOOLS_VERSION
 yes | sdkmanager "platform-tools"
